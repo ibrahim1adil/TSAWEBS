@@ -1,3 +1,4 @@
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5dc; /* Beige background */
@@ -6,6 +7,7 @@ body {
   margin: 0;
 }
 
+/* Header styling */
 header {
   background-color: #8b4513; /* Brown header */
   color: #fff;
@@ -28,10 +30,12 @@ header nav ul li a {
   text-decoration: none;
 }
 
+/* Headings styling */
 h1, h2 {
   color: #3e2723; /* Dark brown for headings */
 }
 
+/* Footer styling */
 footer {
   background-color: #8b4513; /* Match header */
   color: #fff;
@@ -46,6 +50,79 @@ main {
   margin-bottom: 60px; /* Prevent content from overlapping footer */
 }
 
-ul li {
+/* Popup menu styling */
+.popup-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #f5f5dc; /* Beige background for the menu */
+  color: #5a5a5a; /* Natural brown text */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+  color: #3e2723; /* Dark brown for headings */
+}
+
+.popup-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup-content ul li {
   margin: 10px 0;
 }
+
+.popup-content ul li a {
+  color: #3e2723; /* Dark brown links */
+  text-decoration: none;
+}
+
+.popup-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-button {
+  background: #8b4513; /* Brown background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-button:hover {
+  background: #5a3720; /* Darker brown on hover */
+}
+
+.close-button {
+  background: #8b4513; /* Brown background */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  background: #5a3720; /* Darker brown on hover */
+}
+
